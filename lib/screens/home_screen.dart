@@ -1,3 +1,4 @@
+import 'package:collection/collection.dart' show ListExtensions;
 import 'package:flutter/material.dart';
 
 import '../widgets/piano_button.dart';
@@ -25,10 +26,15 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: const Color(0xFF253238),
       ),
       body: Column(
-        children: [
-          for (int i = 0; i < colors.length; i++)
-            PianoButton(color: colors[i], soundNumber: i + 1)
-        ],
+        children: colors.mapIndexed((index, color) {
+          return PianoButton(color: color, soundNumber: index + 1);
+        }).toList(),
+        // colors
+        //     .asMap()
+        //     .entries
+        //     .map((entry) =>
+        //         PianoButton(color: entry.value, soundNumber: entry.key + 1))
+        //     .toList(),
       ),
     );
   }
