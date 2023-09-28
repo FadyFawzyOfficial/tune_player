@@ -13,7 +13,15 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
       ),
       body: const Column(
-        children: [PianoButton(color: Colors.red)],
+        children: [
+          PianoButton(color: Colors.red),
+          PianoButton(color: Colors.orange),
+          PianoButton(color: Colors.yellow),
+          PianoButton(color: Colors.green),
+          PianoButton(color: Colors.teal),
+          PianoButton(color: Colors.blue),
+          PianoButton(color: Colors.purple),
+        ],
       ),
     );
   }
