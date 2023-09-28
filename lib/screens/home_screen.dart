@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'piano_button.dart';
+import '../widgets/piano_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,8 +9,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: const Text('Tune Player'),
-        backgroundColor: Colors.blueGrey,
+        centerTitle: true,
+        backgroundColor: const Color(0xFF253238),
       ),
       body: const Column(
         children: [
