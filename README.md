@@ -1,16 +1,19 @@
-# tune_player
+# Tune Player 🎵🎹🎶
 
-A new Flutter project.
+Tune Player App is a Flutter Project For Mobile Application.
+Tune Player is a Simple Mobile Application to Play some Tunes Sounds
 
-## Getting Started
+## Our Goal
 
-This project is a starting point for a Flutter application.
+Tune Player App is for learning purpose.
+It's the 4th App which in:
+the 10th Section (Tunes Player App)
+of Flutter & Dart Complete Development Course [2023] [Arabic] Course (On Udemy)
 
-A few resources to get you started if this is your first Flutter project:
+Flutter version: 3.13.1
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Created & Developed by:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Eng.Fady Fawzy
+
+Mobile Application Developer
