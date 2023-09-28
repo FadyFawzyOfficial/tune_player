@@ -14,13 +14,13 @@ class HomeScreen extends StatelessWidget {
       ),
       body: const Column(
         children: [
-          PianoButton(color: Colors.red),
-          PianoButton(color: Colors.orange),
-          PianoButton(color: Colors.yellow),
-          PianoButton(color: Colors.green),
-          PianoButton(color: Colors.teal),
-          PianoButton(color: Colors.blue),
-          PianoButton(color: Colors.purple),
+          PianoButton(color: Colors.red, soundNumber: 1),
+          PianoButton(color: Colors.orange, soundNumber: 2),
+          PianoButton(color: Colors.yellow, soundNumber: 3),
+          PianoButton(color: Colors.green, soundNumber: 4),
+          PianoButton(color: Colors.teal, soundNumber: 5),
+          PianoButton(color: Colors.blue, soundNumber: 6),
+          PianoButton(color: Colors.purple, soundNumber: 7),
         ],
       ),
     );
