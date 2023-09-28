@@ -5,6 +5,16 @@ import '../widgets/piano_button.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
+  static const colors = [
+    Colors.red,
+    Colors.orange,
+    Colors.yellow,
+    Colors.green,
+    Colors.teal,
+    Colors.blue,
+    Colors.purple,
+  ];
+
   @override
   Widget build(context) {
     return Scaffold(
@@ -14,15 +24,10 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: const Color(0xFF253238),
       ),
-      body: const Column(
+      body: Column(
         children: [
-          PianoButton(color: Colors.red, soundNumber: 1),
-          PianoButton(color: Colors.orange, soundNumber: 2),
-          PianoButton(color: Colors.yellow, soundNumber: 3),
-          PianoButton(color: Colors.green, soundNumber: 4),
-          PianoButton(color: Colors.teal, soundNumber: 5),
-          PianoButton(color: Colors.blue, soundNumber: 6),
-          PianoButton(color: Colors.purple, soundNumber: 7),
+          for (int i = 0; i < colors.length; i++)
+            PianoButton(color: colors[i], soundNumber: i + 1)
         ],
       ),
     );
